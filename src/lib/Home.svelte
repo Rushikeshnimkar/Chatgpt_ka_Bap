@@ -6,6 +6,7 @@
   import { getPetalsBase, getPetalsWebsocket } from './ApiUtil.svelte'
   import { set as setOpenAI } from './providers/openai/util.svelte'
   import { hasActiveModels } from './Models.svelte'
+ 
 
 $: apiKey = $apiKeyStorage
 
@@ -31,6 +32,7 @@ afterUpdate(() => {
     pedalsEndpoint = $globalStorage.pedalsEndpoint
     $checkStateChange++
 })
+// const apiKeyy = process.env.API_KEY;
 
 const setPetalsEnabled = (event: Event) => {
     const el = (event.target as HTMLInputElement)
@@ -67,9 +69,9 @@ const setPetalsEnabled = (event: Event) => {
         on:submit|preventDefault={(event) => {
           let val = ''
           if (event.target && event.target[0].value) {
-            val = (event.target[0].value).trim()
+            val = import.meta.env.VITE_OPENAI_API_KEY
           }
-          setOpenAI({ apiKey: val })
+          setOpenAI({ apiKey: val })  
           hasModels = hasActiveModels()
         }}
       >
