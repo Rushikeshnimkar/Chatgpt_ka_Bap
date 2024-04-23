@@ -14,7 +14,7 @@
   import { set as setOpenAI } from './lib/providers/openai/util.svelte'
   import { hasActiveModels } from './lib/Models.svelte'
   // import { dev } from '$app/environment';
-import { inject } from '@vercel/analytics';
+  import { inject } from '@vercel/analytics';
 
  
 inject({ mode: 'production' });
