@@ -15,6 +15,7 @@
   import { hasActiveModels } from './lib/Models.svelte'
   // import { dev } from '$app/environment';
 import { inject } from '@vercel/analytics';
+
  
 inject({ mode: 'production' });
 
