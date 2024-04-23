@@ -47,7 +47,7 @@ const setPetalsEnabled = (event: Event) => {
   <article class="message">
     <div class="message-body">
     <p class="mb-4">
-      <strong><a href="https://github.com/Niek/chatgpt-web" target="_blank">ChatGPT-web</a></strong>
+      <strong><a href="https://github.com/Niek/chatgpt-web" target="_blank">Virtue Matrix AI</a></strong>
       is a simple one-page web interface to the OpenAI ChatGPT API. To use it, you need to register for
       <a href="https://platform.openai.com/account/api-keys" target="_blank" rel="noreferrer">an OpenAI API key</a>
       first. OpenAI bills per token (usage-based), which means it is a lot cheaper than
@@ -96,7 +96,7 @@ const setPetalsEnabled = (event: Event) => {
       {#if !apiKey}
         <p class:is-danger={!hasModels} class:is-warning={!apiKey}>
           Please enter your <a target="_blank" href="https://platform.openai.com/account/api-keys">OpenAI API key</a> above to use Open AI's ChatGPT API.
-          At least one API must be enabled to use ChatGPT-web.
+          At least one API must be enabled to use Virtue Matrix AI.
         </p>
       {/if}
     </div>

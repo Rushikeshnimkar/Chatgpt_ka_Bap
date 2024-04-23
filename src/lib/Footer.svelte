@@ -16,7 +16,7 @@ export { classes as class }
   <slot />
   <div class="content has-text-centered credit-footer">
     <p>
-      <strong>ChatGPT-web</strong>
+      <strong>Virtue Matrix AI</strong>
       <span class="author">by
       <a target="_blank" href="https://portfolio2024-i3d9.vercel.app/">Rushikesh Nimkar</a>
       </span>
