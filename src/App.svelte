@@ -13,6 +13,10 @@
   import { dispatchModalEsc, checkModalEsc } from './lib/Util.svelte'
   import { set as setOpenAI } from './lib/providers/openai/util.svelte'
   import { hasActiveModels } from './lib/Models.svelte'
+  // import { dev } from '$app/environment';
+import { inject } from '@vercel/analytics';
+ 
+inject({ mode: 'production' });
 
   // Check if the API key is passed in as a "key" query parameter - if so, save it
   // Example: https://niek.github.io/chatgpt-web/#/?key=sk-...
