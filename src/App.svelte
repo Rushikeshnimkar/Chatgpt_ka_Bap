@@ -1,3 +1,4 @@
+
 <script lang="ts">
   import Router, { location, replace, querystring } from 'svelte-spa-router'
   import { wrap } from 'svelte-spa-router/wrap'
